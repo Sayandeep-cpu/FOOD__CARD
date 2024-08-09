@@ -1,0 +1,40 @@
+ .food-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    height: 300px;
+    margin: auto;
+    text-align: left;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+    text-align: center;
+  }
+  p{
+    text-align:start;
+  }
+  .food-card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  } 
+  @media screen and(max-width<=900px){
+    .food-card , .price{
+      flex-basis: 50%;
+    }
+    @media screen and(max-width<=700px){
+      .food-card , .price{
+        flex-basis: 100%;
+      }
+    }
+    
+  }
+  
